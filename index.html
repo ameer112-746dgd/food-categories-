@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Categories</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            border-bottom: 2px solid #09e614;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #ff6f61;
+            color: white;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+
+        /* Image Container Styles */
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* Adjust spacing between images */
+        }
+
+        .image-container img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+
+        .image-container a {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            border: 2px solid #61ff73; /* Added border to indicate link */
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .image-container a:hover {
+            background-color: #04580e;
+            color: white;
+        }
+
+        /* Media Query for Responsive Design */
+        @media (max-width: 600px) {
+            .image-container img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Food Categories</h1>
+
+        <!-- Fruits Section -->
+        <h2>Fruits</h2>
+        <div class="image-container">
+            <!-- Remote image -->
+            <img src="https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg" alt="Fruit Image from Pexels">
+            <!-- Local image 1 -->
+            <img src="local-fruit1.jpg" alt="Local Fruit 1">
+            <!-- Local image 2 with link -->
+            <a href="https://www.pinterest.com/search/pins/?q=fruits" target="_blank">
+                <img src="local-fruit2.jpg" alt="Local Fruit 2">
+                <p>Explore more fruit images</p>
+            </a>
+        </div>
+
+        <!-- Vegetables Section -->
+        <h2>Vegetables</h2>
+        <div class="image-container">
+            <!-- Remote image -->
+            <img src="https://images.pexels.com/photos/1435896/pexels-photo-1435896.jpeg" alt="Vegetable Image from Pexels">
+            <!-- Local image 1 -->
+            <img src="local-vegetable1.jpg" alt="Local Vegetable 1">
+            <!-- Local image 2 with link -->
+            <a href="https://www.pinterest.com/search/pins/?q=vegetables" target="_blank">
+                <img src="local-vegetable2.jpg" alt="Local Vegetable 2">
+                <p>Explore more vegetable images</p>
+            </a>
+        </div>
+
+        <!-- Grains Section -->
+        <h2>Grains</h2>
+        <div class="image-container">
+            <!-- Remote image -->
+            <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce" alt="Grain Image from Unsplash">
+            <!-- Local image 1 -->
+            <img src="local-grain1.jpg" alt="Local Grain 1">
+            <!-- Local image 2 with link -->
+            <a href="https://www.pinterest.com/search/pins/?q=grains" target="_blank">
+                <img src="local-grain2.jpg" alt="Local Grain 2">
+                <p>Explore more grain images</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
